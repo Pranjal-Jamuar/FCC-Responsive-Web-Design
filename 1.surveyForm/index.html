@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Bayern Survey Form</h1>
+    <p id="description">This form will help us to understand you better and what we could do so that you have a seamless experience at this club of ours.</p>
+    <div class="main">
+      <form mathod="post" id="survey-form" action='https://register-demo.freecodecamp.org'> 
+        <fieldset>
+            <label id="name-label" for="name">Enter Your Name: <input type="text" name="name" id="name" placeholder="Enter your name here..." required />
+            </label>
+            <label id="email-label" for="email">Enter Your Registration Email: <input type="email" name="email" id="email" placeholder="Enter your email here..." required />
+            </label>
+            <label id="number-label" for="age">Enter Your Age (Optional): <input type="number" name="age" id="number" min="13" max="120" placeholder="Enter your Age here..."/>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label id="label-dropdown" for="dropdown">How would you describe your Current Role: 
+          <select id="dropdown" name="dropdown">
+            <option value="">Please Select One</option>
+            <option value="1">Student</option>
+            <option value="2">Part-Time Working Professional</option>
+            <option value="3">Full-Time Working Professional</option>
+            <option value="4">Retired</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset>Place of Residence: 
+          <label for="germany">
+            <input type="radio" id="germany" name="residence-type"  class="inline" value="Germany">Germany
+          </label>
+          <label for="outside-germany">
+            <input type="radio" id="-outside-germany" name="residence-type" class="inline" value="Outside-Germany">Outside Germany
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="checkbox" id="label-checkbox">What all perks would you want with your membership? (check all that apply)<br>
+            <input type="checkbox" id="checkbox" name="checkbox" value="Only Membership" class="inline">I would like the Membership Only.<br>
+            <input type="checkbox" id="checkbox" name="checkbox" value="Merch Added" class="inline">I would like to Merchandise to the Membership.<br>
+            <input type="checkbox" id="checkbox" name="checkbox" value="Merch and Match tickets discount added" class="inline">I would like to add Merchandise and Match Tickets' Discount to the Membership.
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="bio">Provide a bio for yourself:
+          <textarea id="bio" name="bio" rows="5" cols="50" placeholder="I am a very simple person and a fan..."></textarea>
+        </label>
+        </fieldset>
+        <fieldset>
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
