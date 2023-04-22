@@ -1,0 +1,251 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --text: hsl(228, 12%, 8%);
+    --pale: hsl(32, 37%, 92%);
+    --green: hsl(158, 36%, 37%);
+    --header-text: hsl(221, 21%, 14%);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--pale);
+}
+
+#header-img {
+    width: 60px;
+    object-fit:contain;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--white);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 0 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.the-product {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: "Montserrot";
+}
+
+#email-section {
+    margin-top: 100px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+}
+
+#submit {
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+}
+
+section::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+section {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Fraunces';
+    margin-bottom: 10px;
+}
+
+.icon {
+    color: var(--green);
+    margin: 30px;
+}
+
+#features {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: 'Montserrat';
+}
+
+#video {
+    width: 100%;
+}
+
+.product-image {
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    border: 1px solid var(--text);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.product-1 {
+    background-image: url(https://imgs.search.brave.com/RebFDnMfTAKng5BroZLAjrv_36p-rnPyZoRHv4l4mtI/rs:fit:595:842:1/g:ce/aHR0cDovL3N0dWR5/cG9vbC5jb20vaW1h/Z2VzL3N0dWR5R3Vp/ZGVzL0hvd190b19X/aW5fRnJpZW5kc19h/bmRfSW5mbHVlbmNl/X1Blb3BsZS9Cb29r/X0NvdmVyLmpwZw);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+
+.product-2 {
+    background: url(https://imgs.search.brave.com/ip_-gvrsEfhFlBEz3wEfwDWnVUjOS3GlveI0P6hA-1c/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/aW5jcmVtZW50YS5j/YS93cC1jb250ZW50/L3VwbG9hZHMvMjAx/OS8wNy9hdG9taWNo/YWJpdHMuanBn);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-3 {
+    background: url(https://imgs.search.brave.com/Ba1jBAXYOCPJBpqX0_98VSqJm8YlYNaOW7zqCdSpqEM/rs:fit:907:1200:1/g:ce/aHR0cHM6Ly9nbGVl/Z21qb3VybmFsLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/MS8wNC9yaWNoLWRh/ZC1wb29yLWRhZC1j/b3Zlci5qcGc);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.content {
+    font-family: 'montserrat';
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main-price {
+    margin-right: 20px;
+    font-size: 30px;
+    font-family: 'fraunces';
+    color: var(--green);
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: var(--text);
+}
+
+.author {
+font-family: 'montserrat';
+letter-spacing: 5px;
+color: var(--text);
+text-transform: uppercase;
+}
+
+.header {
+    font-family: 'fraunces';
+    margin: 10px 0;
+    color: var(--header-text);
+}
+
+.add {
+    background-color: var(--green);
+    cursor: pointer;
+    margin: auto;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--white);
+    font-family: 'montserrat';
+    font-weight: 700;
+    display: flex;
+    margin: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    #nav-bar {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (450px < width < 600px) {
+    .card {
+        font-size: 0.85rem;
+    }
+    .product-image {
+        height: 400px;
+    }
+}
+
+@media only screen and (450px <= width) {
+    .card {
+        display: flex;
+        max-width: 525px;
+    }
+    .inner-card {
+        width: 300px;
+        padding: 20px;
+        
+    }
+    .product-image {
+        width: 400px;
+        border-radius: 10px 0 0 10px;
+    }
+}
+
+@media only screen and (width >=100px) {
+    #video {
+        width: 70%;
+    }
+    .products-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
